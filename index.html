@@ -1,13 +1,79 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <title>About Me</title>
+        <title>Profile</title>
 
         <link href="styles.css" rel="stylesheet" type="text/css">
+
+        <link href="https://fonts.googleapis.com/css?family=Lora:400,400i,700,700i|Open+Sans:300,300i,400,400i,700,700i&display=swap" rel="stylesheet">
+
     </head>
     <body>
 
-        <!-- Your Code Here -->
+    	<!-- CODE CREDITS:
 
+    		Parallax code understood from w3schools.com
+
+    	-->
+
+<!-- using semantic elements - defining the parts of the parallax -->
+
+<main class="wrapper"> 
+
+	<section class = "parallax picture1">
+		<video autoplay muted loop id="video1">
+			<source src = 'https://www.videvo.net/videvo_files/converted/2014_06/preview/Blue_Sky_and_Clouds_Timelapse_0892__Videvo.mov75480.webm' type = "video/mp4">
+		</video>
+		<div class = "toptext">
+			<div id = "hello"> Hello! </div>
+			<div id = "imsarah"> I'm Sarah </div>
+		</div>
+	<img src = "https://www.joinbounce.com/wp-content/uploads/2017/11/scroll.gif" id = "arrow">
+	</section>
+
+	<section>
+
+			<div class = "overlay">
+				<span class = "title" id = "ggltitle">Google</span>
+			</div>
+
+			<div class = "overlay">
+				<span class = "title" id = "mbtitle">Moodboard</span>
+			</div>
+
+			<div class = "overlay">
+				<span class = "title" id = "gramtitle">SAMStagram</span>
+			</div>
+
+	</section>
+
+	<div class = "underlay">
+		<!--Google -->
+		<img src = "https://media.giphy.com/media/dz6PIGVHtvtlYaf0Nv/giphy.gif" class = "projpic" id = "googlepic">
+
+		<!--Moodboard -->
+		<img src="https://media.giphy.com/media/RlSxPQ3mbqHvUV3FHX/giphy.gif" class = "projpic" id = "mbpic">
+
+		<!-- SAMStagram -->
+		<img src = "https://media.giphy.com/media/JSw9Zzqh7juKPLiGNT/giphy.gif" class = "projpic" id = "grampic">
+
+
+	</div>
+
+	<section class = "parallax picture2">
+	<div class = "aboutme">
+		<div class = "abtmetop">
+			About Me 
+		</div>
+		<div class = "abtmeinfo">
+			My name is Sarah Kogan, and I'm a rising junior from New York. I enjoy programming, singing, writing, 
+		</div>
+	</div>
+	</section>
+</main>
+
+
+
+</div>
     </body>
 </html>
