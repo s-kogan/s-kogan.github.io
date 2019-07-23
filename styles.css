@@ -109,7 +109,7 @@ body,html {
 	padding:30px;
 	line-height:30px;
 	font-size:20px;
-	font-family:'open sans';
+	font-family:'open sans', sans-serif;
 }
 
 #picofme {
