@@ -1,0 +1,100 @@
+body {
+	width:100vw;
+	height:100vh;
+	margin:0px;
+	font-family:arial;
+	background-color:gray;
+}
+
+h1 {
+	margin:0px;
+}
+
+h4 {
+	margin:8px auto;
+}
+/* HEADER */
+
+.header {
+	width:100vw;
+	padding:1vh;
+	background-color:black;
+	color:white;
+	text-align:center;
+}
+
+/* HEADER LINKS */
+
+.profilelink, .homelink {
+	position:absolute;
+	top:10px;
+	right:10px;
+}
+
+/* NEWPOST FORM */
+
+.newpost {
+	margin:5% auto;
+	background-color:white;
+	width:85vw;
+	padding:3%;
+}
+
+#imageurl, #imagecaption {
+	width:80vw;
+	padding:5px;
+}
+
+#submitbutton {
+	background-color:lightgray;
+	color:black;
+	cursor:pointer;
+	border-radius:3px;
+	margin-top:2px;
+	padding:5px;
+}
+
+/*PROFILE*/
+
+.profile {
+	background-color:white;
+	margin: 5%;
+	padding:3%;
+}
+
+/* POST BOX */
+
+.post_box {
+	position:relative;
+	background-color:white;
+	margin:20px;
+	padding:20px;
+	overflow:scroll;
+	width:200px;
+	height:175px;
+	text-align:left;
+	display:inline-block;
+
+
+}
+
+.post_box img:first-child {
+	width:100%;
+}
+
+/* CLOSE BUTTON */
+.close_button {
+	width:15px;
+	height:15px;
+	position:absolute;
+	left:93%;
+	top:1%;
+}
+
+.close_button:hover {
+	background-color:white;
+	cursor:pointer;
+}
+
+
+
