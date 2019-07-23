@@ -1,49 +1,93 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <title>SAMStagram</title>
+        <title>Profile</title>
 
-        <link href="styles.css" rel="stylesheet" type="text/css">
+        <link href = "styles.css" rel = "stylesheet" type = "text/css">
+
+        <link href = "https://fonts.googleapis.com/css?family = Lora:400,400i,700,700i|Open+Sans:300,300i,400,400i,700,700i&display = swap" rel = "stylesheet">
+
     </head>
     <body>
 
-    <!-- HEADER -->
-    <div class="header">
-        <h1>SAMS-tagram</h1>
-    </div>
+    	<!-- CODE CREDITS:
 
-    <!-- LINK -->
-    <div class="profilelink">
-    	<a href="profile.html">Profile</a>
-    </div>
+    		Parallax code understood from w3schools.com
+
+    	-->
+
+<!-- using semantic elements - defining the parts of the parallax -->
+
+<div class = "nav">
+	<ul>
+		<li>About Me</li>
+		<li>Projects</li>
+	</ul>
+</div>
+
+<main class = "wrapper"> 
+
+	<section class = "parallax picture1">
+		<div class = "toptext">
+			<div id = "hello"> Hello! </div>
+			<div id = "imsarah"> I'm Sarah </div>
+		</div>
+	<img src = "https://www.joinbounce.com/wp-content/uploads/2017/11/scroll.gif" id = "arrow">
+	</section>
+
+		<section class = "parallax picture2">
+	<div class = "aboutme">
+		<div class = "abtmetop">
+			About Me 
+		</div>
+		<div class = "abtmeinfo">
+			My name is Sarah Kogan, and I'm a rising junior from New York. I'm a creative writer, a singer, a programmer, and a hiker.
+		</div>
+		<img id = "picofme" src = "https://bit.ly/2Ly6aaL">
+	</div>
+	</section>
+
+	<section>
+
+	<div class = "projextra topper"> Projects </div>
+		<div class = "overlay">
+			<span class = "title" id = "ggltitle"><a href = "prettygoogle/index.html">Google</a></span>
+			<div class = "projdescription">A recreation of the Google search results page for Sam's Club</div>
+		</div>
+
+		<div class = "overlay">
+			<span class = "title" id = "mbtitle"><a href = "prettymoodboard/index.html">Moodboard</a></span>
+			<div class = "projdescription">A scrapbook-style moodboard where you can add your own images</div>
+		</div>
+
+		<div class = "overlay">
+			<span class = "title" id = "gramtitle"><a href = "prettysamstagram/index.html">SAMStagram</a></span>
+			<div class = "projdescription">A social media website for SAMS</div>
+		</div>
+	<div class = "projextra morebtn"> More Projects... </div>
+
+	<div id = "extraprojects">
+		<a href = "prettytypinggame/index.html"> Typing Game </a> <br><br>
+	</div>
+
+	</section>
+
+	<div class = "underlay">
+		<!--Google -->
+		<img src = "https://media.giphy.com/media/dz6PIGVHtvtlYaf0Nv/giphy.gif" class = "projpic" id = "googlepic">
+
+		<!--Moodboard -->
+		<img src = "https://media.giphy.com/media/RlSxPQ3mbqHvUV3FHX/giphy.gif" class = "projpic" id = "mbpic">
+
+		<!-- SAMStagram -->
+		<img src = "https://media.giphy.com/media/JSw9Zzqh7juKPLiGNT/giphy.gif" class = "projpic" id = "grampic">
+	</div>
 
 
-    <!-- NEW POST -->
-    <div class="newpost">
-        <h4>New Post!</h4>
-        <form id="form1">
-        	Image URL
-            <br>
-        	<input type="text" id="imageurl">	
-            <br><br>
-            Caption
-            <br>
-            <input type="text" id="imagecaption">
-            <br>
+</main>
 
-        	<input type="submit" id="submitbutton" value="Post!">
-        </form>
-    </div>
 
-    <!-- POST CONTAINER -->
-<div id="container">
 
 </div>
-    <!-- JS AND JQUERY LINKS -->
-
-        <script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
-        <script src='index.js'></script>
     </body>
 </html>
-
-
