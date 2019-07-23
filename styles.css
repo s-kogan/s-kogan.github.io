@@ -114,7 +114,7 @@ body,html {
 
 #picofme {
 	width:20%;
-	position:absolute;
+	position:relative;
 	margin-left:65vw;
 	top:10vh;
 }
@@ -155,7 +155,7 @@ body,html {
 	text-align:center;
 	background-color:powderblue;
 	z-index:3;
-	font-family:'lora';
+	font-family:'lora',serif;
 	font-style:italic;
 
 }
@@ -219,6 +219,7 @@ body,html {
 	height:5vh;
 	text-align:center;
 	padding:100px auto;
+	font-size:30px;
 }
 
 .moreprojects {
