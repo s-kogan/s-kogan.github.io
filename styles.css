@@ -1,262 +1,100 @@
-body,html {
-	margin:0; 
-	padding:0;
-	width:100%;
-	height:100%;
-	background-color:powderblue;
-}
-
-/*PARALLAX SCROLLING */
-
-.wrapper {
-	height:100vh;
-	overflow-x: hidden; /* the overflow from the images to left/right should be hidden */
-	overflow-y:auto;
-	perspective:2px; /*pulls image away from "camera"*/
-}
-
-
- .parallax {
-	position:relative; /* each section needs to be relative so the sections would be positioned on top of each other (not absolute, since it would overlap) */
-	height:100vh; /* sets the height of each section to the view height of one page */
+body {
 	width:100vw;
-	display:flex; /* adjusts all elements in the div as vw and vh changes */
-	align-items:center; /* align items vertically */
-	justify-content:center; /* align items horizontally */
+	height:100vh;
+	margin:0px;
+	font-family:arial;
+	background-color:gray;
+}
+
+h1 {
+	margin:0px;
+}
+
+h4 {
+	margin:8px auto;
+}
+/* HEADER */
+
+.header {
+	width:100vw;
+	padding:1vh;
+	background-color:black;
 	color:white;
-	text-shadow:0 0 5px #000; 
-}
-
-/* essentially moves the entire image back from the "camera" and makes it scroll at a different speed */
-
-.parallax::after { /* inserts transformations after every parallax element */
-	content:' ';
-	position:absolute;
-	top:0;
-	right:0;
-	bottom:0;
-	left:0; /* displays image and sets it to fill entire screen */
-	transform: translateZ(-1px) scale(2); /*moves the picture further from the "camera", and makes it larger */
-	background-size:100% 100%;  /* so that it fills the entire background */
-	z-index:-1; /*won't overlap elements that are over it */
-	background-repeat:none;
-}
-
-.picture1::after {
-	background-image: url('https://i.pinimg.com/originals/86/c1/e9/86c1e93de9593e21de50d1bc7e5468be.gif');
-	height:100vh;
-}
-
-/* TEXT STYLING - TOP */
-
-.toptext {
-	position:absolute;
-	top:30vh;	
-	width:500px;
-	height:350px;
-	padding:20px;
-}
-
-
-/* "LANDING PAGE" */
-
-#hello {
-	font-size:150px;
-	font-family:'Lora',serif;
-	font-style:italic;
-	z-index:2;
-}
-
-#imsarah {
-	font-size:100px;
-	font-family:'open sans', sans-serif;
-	font-weight:lighter;
-	text-align:right;
-}
-
-#arrow {
-	width:60px;
-	position:absolute;
-	bottom:5%;
-	left:46%;
-}
-
-/* ABOUT ME */
-
-.aboutme {
-	background-color:white;
-	position:absolute;
-	height:75vh;
-	width:100vw;
-	color:black;
-	text-shadow:none;
-	}
-
-.abtmetop {
-	position:absolute;
-	left:7vw;
-	font-size:75px;
-	padding-top:30px;
-	font-family:'Lora',serif;
-	font-style:italic;
-}
-
-.abtmeinfo {
-	position:absolute;
-	top:20vh;
-	left:7vw;
-	width:30%;
-	padding:30px;
-	line-height:30px;
-	font-size:20px;
-	font-family:'open sans';
-}
-
-#picofme {
-	width:20%;
-	position:absolute;
-	margin-left:65vw;
-	top:10vh;
-}
-
-/* UNDERLAY OF PROJECTS */
-
-.underlay {
-	position:absolute;
-	width:100vw;
-	height:290vh;
-	top:100vh;
-	z-index:1;
-	overflow-y:hidden;
-}
-
-.projpic {
-	position:absolute;
-	width:720px;
-	height:468px;
-	transform: translateZ(-.25px);
-	display:block;
-	left:23vw;
-}
-
-#googlepic {top:101vh;}
-
-#mbpic {top:165vh;}
-
-#grampic {top:230vh;}
-
-/* STATIC PROJECT OVERLAY */
-
-/* setting the css for each section of the project, essentially made up of a smaller transparent div with borders */
-
-.projextra {
-	position:absolute;
-	width:100vw;
 	text-align:center;
-	background-color:powderblue;
-	z-index:3;
-	font-family:'lora';
-	font-style:italic;
-
 }
 
-.overlay {
-	border: 1px solid;
-	width:600px;
-	height:50vh;
+/* HEADER LINKS */
+
+.profilelink, .homelink {
+	position:absolute;
+	top:10px;
+	right:10px;
+}
+
+/* NEWPOST FORM */
+
+.newpost {
+	margin:5% auto;
+	background-color:white;
+	width:85vw;
+	padding:3%;
+}
+
+#imageurl, #imagecaption {
+	width:80vw;
+	padding:5px;
+}
+
+#submitbutton {
+	background-color:lightgray;
+	color:black;
+	cursor:pointer;
+	border-radius:3px;
+	margin-top:2px;
+	padding:5px;
+}
+
+/*PROFILE*/
+
+.profile {
+	background-color:white;
+	margin: 5%;
+	padding:3%;
+}
+
+/* POST BOX */
+
+.post_box {
 	position:relative;
-	border-color:powderblue;
-	z-index:2;
-	border-width: 7vh 45vw 7vh 27vw;
-}
-
-.overlay a{
-	color:black;
-	text-decoration:none;
-}
-
-.overlay a:hover {
-	text-decoration:underline;
-}
-
-/* Title text */
-
-.title {
-	padding:5px;
-	position:absolute;
-	border-radius:5px;
-	left:500px;
-	top:20vh;
-	font-size:50px;
-	font-family:'Lora',serif;
-	font-style:italic;
-	background-color:powderblue;
-
-}
-
-.projdescription {
-	padding:5px;
-	position:absolute;
-	top:30vh;
-	font-family:'open sans',sans-serif;
-	left:550px;
-	width:300px;
-	color:black;
-	background-color:powderblue;
-}
-/* EXTRAS: Projects heading and more button (bottom); */
-
-.topper {
-	height:20vh;
-	top:175vh;
-	font-size:75px;
+	background-color:white;
+	margin:20px;
+	padding:20px;
+	overflow:scroll;
+	width:200px;
+	height:175px;
 	text-align:left;
-	padding-left:7vw;
-	padding-top:50px;
+	display:inline-block;
+
+
 }
 
-.morebtn {
-	height:5vh;
-	text-align:center;
-	padding:100px auto;
+.post_box img:first-child {
+	width:100%;
 }
 
-.moreprojects {
-	background-color:powderblue;
-	color:black;
-	z-index:3;
-}
-
-/* NAVIGATION */
-
-.nav {
+/* CLOSE BUTTON */
+.close_button {
+	width:15px;
+	height:15px;
 	position:absolute;
-	right:0px;
-	width:150px;
-	border-radius:5px 0 0 5px;
+	left:93%;
+	top:1%;
+}
+
+.close_button:hover {
 	background-color:white;
-	z-index:3;
+	cursor:pointer;
 }
 
-#extraprojects {
-	position:absolute;
-	background-color:powderblue;
-	width:100vw;
-	height:30vh;
-	top:400vh;
-	text-align:center;
-	font-family:'open sans',sans-serif;
-}
 
-#extraprojects a {
-	color:black;
-	text-decoration:none;
-	padding:5px;
-	border-radius:5px;
-	margin-bottom:5px;
-}
-
-#extraprojects a:hover {
-	background-color:white;
-}
 
