@@ -229,15 +229,6 @@ body,html {
 
 /* NAVIGATION */
 
-.nav {
-	position:absolute;
-	right:0px;
-	width:150px;
-	border-radius:5px 0 0 5px;
-	background-color:white;
-	z-index:3;
-}
-
 #extraprojects {
 	position:absolute;
 	background-color:powderblue;
@@ -251,9 +242,10 @@ body,html {
 #extraprojects a {
 	color:black;
 	text-decoration:none;
-	padding:5px;
+	padding:2px;
 	border-radius:5px;
-	margin-bottom:5px;
+	margin-bottom:20px;
+	font-size:20px;
 }
 
 #extraprojects a:hover {
