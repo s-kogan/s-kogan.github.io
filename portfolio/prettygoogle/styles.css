@@ -1,0 +1,282 @@
+html, body {
+	height:100%;
+	width:90%;
+}
+
+body {
+	margin-left: 6%;
+	margin-top:2%;
+	font-family:roboto;
+}
+
+/*HEADER*/
+
+
+.dropbuttonmenu {
+	position:relative;
+	list-style-type:none;
+	border:none;
+	float:left;
+	font-size:16px;
+	padding:1%;
+	padding-bottom:15px;
+}
+
+.dropbuttonmenu a:hover {
+	padding-bottom:15px;
+}
+
+.dropmenu {
+	position:relative;
+}
+
+.dropcontentmenu {
+	display:none;
+	position:absolute;
+	background-color:white;
+	padding:10px 0;
+	box-shadow:1px 1px 3px 1px;
+	z-index:1;
+	left:350px;
+	margin-top:35px;
+	border-radius:5px;
+	min-width:150px;
+
+}
+
+.dropcontentmenu a {
+	color:gray;
+	background-color:white;
+	text-decoration:none;
+	display:block;
+	padding:10px;
+}
+
+
+.dropcontentmenu a:hover {
+	background-color:gainsboro;
+	text-decoration:none;
+}
+
+.dropmenu:hover .dropcontentmenu {
+	display:block;
+}
+
+
+
+#menu a {
+	color:gray;
+}
+
+#menu li:hover {
+	background-color:whitesmoke;
+}
+
+#searchbar {
+
+	margin-left: 50px;
+	margin-top:2%;
+	width: 90%;
+	height: 25px;
+	border-radius: 25px;
+	border: 1px solid lightgray;
+	font-size:15px;
+}
+
+#searchbar:hover {
+	box-shadow:0px 0px 3px 2px rgba(0,0,0,.2);
+}
+
+#header {
+	width:100%;
+	color: black;
+	text-align: center;
+	font-size: 60px;
+	font-family: arial;
+}
+
+
+/*link rules*/
+a:link {
+
+	color:blue;
+	text-decoration:none;
+}
+
+	a:visited {
+
+		color:purple;
+		text-decoration:none;
+	}
+
+	a:hover {
+
+		color:blue;
+		text-decoration:underline;
+	}
+
+	a:active {
+
+		color:blue;
+		text-decoration:underline;
+	}
+
+/*TOP MENU*/
+
+li {
+	position:relative;
+	list-style-type:none;
+	float:left;
+	padding:1%;
+	border-radius:5px; 
+}
+
+li a {
+	text-decoration:none;
+}
+
+li a:hover {
+	text-decoration:none;
+}
+
+li:hover{
+	color:grey;
+	border-bottom:3px solid blue;
+	text-decoration:none;
+}
+
+/*RESULTS*/
+
+#menu {
+	width:120%;
+	color:grey;                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                       dw
+}
+
+#samspicture {
+	width:90%;
+	padding:5%;
+}
+
+.icon {
+	height:15%;
+	width:10px;
+	filter:opacity(50%);
+}
+
+.cells {
+	padding: 0 7%;
+	margin: 3%;
+}
+
+.greentext {
+
+	color: green;
+}
+
+.samsbox {
+	position:absolute;
+	top:30%;
+	left:60%;
+	right:10%;
+	border:1px solid lightgray;
+	padding:.5% 2%;
+	text-align:left;
+	border-radius:5px;
+}
+
+.samsboxtd {
+	width:50%;
+	height:30%;
+}
+
+.result {
+
+	width:60%;
+}
+.resulttiming {
+	color:gray;
+	font-size:13px;
+}
+
+.profiles {
+
+	width:50px;
+	float:left;
+	padding:2%;
+}
+
+#main {
+
+	font-size: 23px;
+}
+
+#share {
+
+	width: 30px;
+	height: 30px;
+}
+
+#earth {
+
+	width:20px;
+	height:20px;
+}
+
+
+.toprightmenu {
+	position:absolute;
+	top:3%;
+	width:90%;
+}
+.toprightpic {
+	width:20px;
+	float:right;
+	padding:5px;
+}
+
+.dropbuttontop {
+	border:1px solid black;
+	background-color:white;
+	position:relative;
+}
+
+.toprightpic img:hover {
+	filter:opacity(50%);
+}
+
+.dropcontenttop {
+	position:absolute;
+	right:25px;
+	top:100%;
+	background-color:white;
+	z-index:1;
+	width:260px;
+	display:none;
+	border:1px solid lightgray;
+	box-shadow:0px 0px 3px 2px rgba(0,0,0,.2);
+	padding:5px;
+}
+
+.dropcontenttop td {
+	padding:20px;
+	text-align:center;
+	font-size:11px;
+	border:1px solid white;
+	margin:20px;
+}
+
+.dropcontenttop td:not(.emptytable) {
+	cursor:pointer;
+}
+
+td img:not(#samspicture) {
+	height:30px;
+	padding:1%;
+}
+
+.dropcontenttop td:hover:not(.emptytable) {
+	border:1px solid lightgray;
+}
+.droptop:hover .dropcontenttop {
+	display:block;
+}
